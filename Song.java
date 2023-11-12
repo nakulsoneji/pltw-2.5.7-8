@@ -1,23 +1,17 @@
-/*
- * Activity 2.5.7
- *
- * A Book class for the MediaLibrary program
- */
-public class Book
-{
+public class Song {
   private String title;
   private String author;
   private int rating;
   
   /*** Constructor ****/
-  public Book(String t, String a)
+  public Song(String t, String a)
   {
     title = t;
     author = a;
     rating = 0;
   }
 
-  public boolean equals(Book b) {
+  public boolean equals(Song b) {
     if (title == b.title && author == b.author) {
       return true;
     }
