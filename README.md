@@ -3,4 +3,4 @@
 To run:
 1. clone the repo
 2. cd into the repo
-3. `make run`
+3. run the command: `make run`
