@@ -1,7 +1,8 @@
 public class Song {
   private String title;
   private String author;
-  private int rating;
+  private double rating;
+  private String date;
   
   /*** Constructor ****/
   public Song(String t, String a)
@@ -9,6 +10,14 @@ public class Song {
     title = t;
     author = a;
     rating = 0;
+    date = Date.getDate();
+  }
+
+  public Song(String t) {
+    title = t;
+    author = "";
+    rating = 0;
+    date = Date.getDate();
   }
 
   public boolean equals(Song b) {
@@ -27,13 +36,13 @@ public class Song {
     return author;
   }
   
-  public int getRating() {
+  public double getRating() {
     return rating;
   }
   
   public String toString() 
   {
-    String info = "\"" + title + "\", written by " + author;
+    String info = "\"" + title + "\", written by " + author + " added at " + date;
     if (rating != 0) 
     { 
       info += ", rating is " + rating;

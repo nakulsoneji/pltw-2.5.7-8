@@ -91,7 +91,6 @@ public class MediaLib
 
   public String toString() 
   {
-    if (book == null) { return ""; }
     String info = "book: " + book + "\nmovie: " + movie + "\nsong: " + song;
     
     return info;
